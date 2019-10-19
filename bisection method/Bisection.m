@@ -13,7 +13,7 @@ function retval = Bisection (funcStr, xl, xu, es, imax)
     itr+=1;
     if (xr != 0)
       if (itr != 1)
-        ea = abs((xr-xrold)/xr)*100;
+        ea = abs((xr-xrold)/xr)*100
       endif
     endif
     test = fh(xr)*fh(xl);
@@ -22,7 +22,7 @@ function retval = Bisection (funcStr, xl, xu, es, imax)
     elseif (test > 0)
       xl = xr;
     else 
-      ea = 0;
+      ea = 0
     endif
     
     if (ea != -1 && ea < es)
