@@ -4,6 +4,10 @@ function retval = FalsePos(funcStr, xl, xu, es, imax)
   fh = str2func(funcStr);
   # end of converting
   
+  if (fh(xl)*fh(xu) > 0)
+    error("f(xl) * f(xu) > 0. There is no root in this interval");
+  endif
+  
   xr=0; # just initializing xr
   ea=-1; # just initializing ea
   
