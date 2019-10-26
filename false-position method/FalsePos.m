@@ -16,7 +16,7 @@ function retval = FalsePos(funcStr, xl, xu, es, imax)
   iu=0;
   il=0;
   
-  for itr = 0:imax=1
+  for itr = 0:imax-1
     xrold = xr;
     xr = xu - fu * (xl-xu)/(fl-fu);
     fr = fh(xr);
