@@ -23,6 +23,7 @@ function retval = FixedPoint(funcStr,x0, imax, es)
     
   endfor
   
+  ea
   retval = xr;
   
 endfunction
