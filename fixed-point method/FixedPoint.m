@@ -1,0 +1,3 @@
+function retval = FixedPoint()
+  
+endfunction
